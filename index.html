@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+      <div class="meun">
+        <ul class="meunbar">
+
+       </ul>
+      </div>
+      <div class="container">
+         <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+  </header>
+    <main>
+    <header class="main__hero">
+      <section id="section0" data-nav="Home">&nbsp&nbsp&nbsp<br/>
+        <div>
+        <h2>Landing Page </h2>
+        <p>&nbsp&nbsp&nbsp</p>
+        <p>&nbsp&nbsp&nbsp</p>
+        </div>
+      </section> 
+      
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1">
+      <div class="landing__container">
+        <h2>Section 1</h2>
+        <p>Nulla dapibus urna et odio rhoncus, vel finibus libero varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sollicitudin, lorem id tincidunt ullamcorper, purus nisi tristique purus, vel blandit nibh arcu in augue. Donec feugiat nunc dui, nec malesuada dolor mollis quis. Integer ligula leo, rhoncus quis risus a, cursus venenatis justo. Suspendisse potenti. Phasellus et tempus ipsum, vehicula consequat sem. Cras tempus ac enim ut posuere. Donec scelerisque augue erat, vel gravida nulla ornare vel. Vivamus sed nunc lobortis, convallis nunc vel, elementum mi.</p>
+
+        <p>Maecenas sit amet ornare augue. Cras nibh sem, dapibus eu sem ac, luctus interdum risus. Etiam fringilla purus ligula. Praesent commodo eros vitae augue vehicula euismod. In posuere vel turpis id tempor. Nam hendrerit mi nec urna efficitur ultrices. Curabitur porttitor pulvinar neque id fringilla.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Section 2</h2>
+        <p>Vestibulum eu urna et turpis mattis vulputate congue quis mauris. Duis a purus ut neque molestie dignissim eu feugiat orci. Nam quis congue dolor. Duis sollicitudin erat placerat aliquet laoreet. Sed maximus arcu aliquet metus placerat commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer vestibulum mi id est volutpat, varius pretium sapien laoreet. Aliquam sed tellus vitae est aliquam facilisis ut a augue. Ut ut urna est. Nulla ac ex ut lectus auctor aliquet laoreet vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi quis malesuada nisi.</p>
+
+        <p>Aenean convallis tincidunt dolor sit amet tincidunt. Nulla faucibus est sit amet sollicitudin varius. Quisque porta, est vitae placerat interdum, nisl sapien ornare libero, sit amet gravida leo nulla vel ipsum. Donec euismod condimentum enim, vitae ultrices felis posuere id. Nulla facilisi. Quisque eu dapibus leo. Ut blandit tempor lorem, at ornare libero maximus et. Pellentesque sollicitudin augue non magna viverra, ut ornare justo vulputate. Aenean pulvinar tincidunt placerat. Nullam justo neque, egestas id ex in, ultrices convallis metus.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Section 3</h2>
+        <p>Duis fermentum mauris nunc, ac tristique velit venenatis lobortis. Phasellus nec posuere elit, at ullamcorper justo. Fusce finibus vehicula sapien, ut ullamcorper leo congue faucibus. Curabitur pulvinar tincidunt neque eu posuere. Proin ac nisi non tortor ornare congue ac et nulla. Fusce cursus ullamcorper ipsum vitae rhoncus. Vivamus laoreet neque nulla, ut tincidunt nunc mattis convallis. Integer ac ante porttitor, luctus sem aliquet, malesuada erat. Duis a libero leo. Integer non ex rhoncus, hendrerit arcu id, porta velit. Morbi sodales quam ligula, ut commodo enim finibus vitae. Sed hendrerit laoreet magna venenatis ultrices. Maecenas aliquet est felis, vel hendrerit ligula congue sed. Vestibulum ut feugiat felis, eu dictum tellus.</p>
+
+        <p>Curabitur et commodo urna, id tempus ex. Praesent varius justo vitae elit consectetur suscipit. Etiam tempus luctus augue pulvinar dapibus. Sed finibus laoreet tristique. Nunc lobortis, ligula eget scelerisque laoreet, risus mauris tempor lacus, ut auctor lacus libero id diam. Nulla facilisi. Suspendisse potenti. Praesent tristique pellentesque orci, in suscipit urna. Aliquam faucibus eros eu pharetra maximus. In semper tortor eros. Nulla lobortis, risus eu aliquam pellentesque, arcu enim eleifend dui, in congue enim lectus vel felis. Quisque tortor lorem, vestibulum eget purus quis, tincidunt pulvinar mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum a erat eu consequat.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Section 4</h2>
+        <p>Nunc maximus, felis sit amet consequat consectetur, odio tortor gravida mauris, vulputate sodales mauris massa nec erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed congue leo dui, a pulvinar velit gravida eleifend. Aliquam erat volutpat. Donec vehicula nisl id commodo congue. Pellentesque venenatis rutrum elit, eget iaculis elit sagittis et. Sed egestas malesuada magna, nec pellentesque mauris pretium sed. Sed molestie magna vel ante lacinia semper. Nullam id erat nunc. Quisque lobortis libero aliquam facilisis lacinia. Sed scelerisque placerat nisi sed venenatis. Vestibulum vitae finibus orci. Duis blandit enim blandit, congue turpis at, consequat magna.</p>
+
+        <p>Aenean eleifend, felis sed vestibulum iaculis, orci magna porta lacus, sed egestas ligula urna nec neque. Nunc pellentesque massa ac augue tincidunt pulvinar. Phasellus scelerisque molestie egestas. Nam sodales interdum nunc vitae vestibulum. Donec id malesuada lectus. In sagittis tellus at est ultricies porttitor. Vivamus arcu mauris, blandit sed felis eget, aliquam auctor eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam euismod, mi vitae fermentum luctus, elit nulla gravida enim, et accumsan sem metus maximus mauris. Maecenas faucibus diam eget tortor tincidunt, nec lacinia lacus mattis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sit amet efficitur justo. Etiam consectetur, felis at facilisis eleifend, orci enim pharetra diam, eget scelerisque augue tellus sed felis. Nulla ac nunc eget ex laoreet tristique. In congue sed turpis vitae dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+    </section>
+    <section id="section5" data-nav="Section 5">
+      <div class="landing__container">
+        <h2>Section 5</h2>
+        <p>Aliquam neque mauris, eleifend ultricies scelerisque et, tincidunt vitae lacus. Proin fringilla ante eu magna vulputate dictum. Proin non fermentum sapien. Donec a felis dolor. Vivamus vestibulum ex nec leo tempus condimentum. Fusce id pretium ligula. Aenean venenatis elementum tincidunt. Aliquam vel ante vel velit condimentum auctor ut ut sapien. Phasellus porttitor faucibus blandit. Vestibulum pellentesque vehicula finibus. Suspendisse vitae auctor lacus, tempor finibus lectus.</p>
+
+        <p>Sed vitae mattis magna, id interdum magna. Sed nisl lorem, ullamcorper in ligula vitae, ultrices porttitor purus. Ut ornare diam commodo, finibus augue in, tincidunt velit. Quisque diam erat, venenatis ac lectus at, dictum suscipit orci. Cras lacinia euismod neque. In nec neque suscipit, tincidunt diam in, feugiat eros. Donec feugiat tempor ante, non blandit erat faucibus vel. Curabitur vitae ex at risus consectetur tempus a non turpis.</p>
+      </div>
+    </section>
+  </main>
+ 
+      </div>
+  </div>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
